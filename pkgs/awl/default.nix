@@ -9,10 +9,10 @@ system ? builtins.currentSystem
 }:
 let
   shaMap = {
-    i686-linux = "0jcprls7i4928sjxcgbi2n7sn24125bc9klmxpczqx6d00cc04dm";
-    x86_64-linux = "1zavnai1q9y00kwi8v2fkmnzwjh29f0gsh1hg1ih2ilxfgy09zwx";
-    armv6l-linux = "1x12dqf19vglr08gfiwd4gas1qy31b7yadj8yl9ap1h72h7mxd38";
-    aarch64-linux = "00cjcgz8fgpci82vsdmm3kps721rrg5wi493ah7y9qal9rbfl273";
+    i686-linux = "1nnl2s6jlxdkhbn8my4bqd3f8nab3c1k2k9m0h3rmksgg99j348s";
+    x86_64-linux = "14w4ww0hc259wwmnwpzfwc61cgdyq1cs854sbz9lygzxf5grwg8f";
+    armv6l-linux = "1gwjjirlhmf29j4lx4y9ssj0ar8a2y3vmqskryzk5xqia4r4la6y";
+    aarch64-linux = "099nh20dapxwscrlpxb630m1i6gyxmsig529m864jknw3dhk0mfz";
     x86_64-darwin = "1bknr54ahh7flxaqx19y8b7mpf52qm1si49l7jg084d7zqwrgh2h";
     aarch64-darwin = "1bknr54ahh7flxaqx19y8b7mpf52qm1si49l7jg084d7zqwrgh2h";
   };
