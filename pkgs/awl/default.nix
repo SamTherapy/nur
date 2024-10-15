@@ -9,26 +9,26 @@ system ? builtins.currentSystem
 }:
 let
   shaMap = {
-    i686-linux = "1nnl2s6jlxdkhbn8my4bqd3f8nab3c1k2k9m0h3rmksgg99j348s";
-    x86_64-linux = "14w4ww0hc259wwmnwpzfwc61cgdyq1cs854sbz9lygzxf5grwg8f";
-    armv6l-linux = "1gwjjirlhmf29j4lx4y9ssj0ar8a2y3vmqskryzk5xqia4r4la6y";
-    aarch64-linux = "099nh20dapxwscrlpxb630m1i6gyxmsig529m864jknw3dhk0mfz";
-    x86_64-darwin = "1bknr54ahh7flxaqx19y8b7mpf52qm1si49l7jg084d7zqwrgh2h";
-    aarch64-darwin = "1bknr54ahh7flxaqx19y8b7mpf52qm1si49l7jg084d7zqwrgh2h";
+    i686-linux = "1my6rz56j1pr00cbxgd5rdbi502s9c4g1mpwqyfkj7krac3p81x7";
+    x86_64-linux = "0z1g58a2i145hnavwjspwkdnrv8n5m5r34yl9dsrzyakyd7ccy9i";
+    armv6l-linux = "06z8lq1gcmsz2igf0pgf0jnp14ikvlkkxdzwkgynmhdzi2y3sw6n";
+    aarch64-linux = "04qbxgxxn7pfd0miyymap82sn2m0n32b1hzrmcwhyacfgaa2m3jm";
+    x86_64-darwin = "1384nfknvd2yk0myzs6ni69q6hy3dsh6wkr2cv05zjsbw2wv3bpg";
+    aarch64-darwin = "1384nfknvd2yk0myzs6ni69q6hy3dsh6wkr2cv05zjsbw2wv3bpg";
   };
 
   urlMap = {
-    i686-linux = "https://git.froth.zone/sam/awl/releases/download/v0.6.13/awl_Linux_i386.tar.gz";
-    x86_64-linux = "https://git.froth.zone/sam/awl/releases/download/v0.6.13/awl_Linux_amd64.tar.gz";
-    armv6l-linux = "https://git.froth.zone/sam/awl/releases/download/v0.6.13/awl_Linux_arm.tar.gz";
-    aarch64-linux = "https://git.froth.zone/sam/awl/releases/download/v0.6.13/awl_Linux_arm64.tar.gz";
-    x86_64-darwin = "https://git.froth.zone/sam/awl/releases/download/v0.6.13/awl_MacOS_all.tar.gz";
-    aarch64-darwin = "https://git.froth.zone/sam/awl/releases/download/v0.6.13/awl_MacOS_all.tar.gz";
+    i686-linux = "https://git.froth.zone/sam/awl/releases/download/v0.6.14/awl_Linux_i386.tar.gz";
+    x86_64-linux = "https://git.froth.zone/sam/awl/releases/download/v0.6.14/awl_Linux_amd64.tar.gz";
+    armv6l-linux = "https://git.froth.zone/sam/awl/releases/download/v0.6.14/awl_Linux_arm.tar.gz";
+    aarch64-linux = "https://git.froth.zone/sam/awl/releases/download/v0.6.14/awl_Linux_arm64.tar.gz";
+    x86_64-darwin = "https://git.froth.zone/sam/awl/releases/download/v0.6.14/awl_MacOS_all.tar.gz";
+    aarch64-darwin = "https://git.froth.zone/sam/awl/releases/download/v0.6.14/awl_MacOS_all.tar.gz";
   };
 in
 stdenvNoCC.mkDerivation {
   pname = "awl";
-  version = "0.6.13";
+  version = "0.6.14";
   src = fetchurl {
     url = urlMap.${system};
     sha256 = shaMap.${system};
